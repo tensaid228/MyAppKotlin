@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_800"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imagetopbot"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_chevron_left_24"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/baseline_edit_note_24"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="@drawable/account_screen"
+        android:layout_marginTop="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/MyAccound"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/background"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/LoginAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Maria Jordan"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@id/MyAccound"/>
+
+        <Button
+            android:id="@+id/foolow"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="FOLLOW"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LoginAccount"
+            android:background="@drawable/background"
+            android:layout_marginTop="25dp"/>
+
+        <ImageButton
+            android:id="@+id/wdadsdw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/baseline_chat_24"
+            app:layout_constraintTop_toTopOf="@id/foolow"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"/>
+
+
+        <ImageButton
+            android:id="@+id/dwadswdaw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_shape_24"
+            android:background="@null"
+            app:layout_constraintTop_toTopOf="@id/foolow"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dwadswdaw"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="35dp"
+            android:text="99"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/password2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            app:layout_constraintTop_toBottomOf="@id/foolow"
+            app:layout_constraintStart_toStartOf="@id/foolow"
+            app:layout_constraintEnd_toEndOf="@id/foolow"
+            android:text="50.5k"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/password3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dwadswdaw"
+            app:layout_constraintStart_toStartOf="@id/dwadswdaw"
+            android:text="2.2M"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/followir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/password1"
+            app:layout_constraintStart_toStartOf="@id/password1"
+            android:text="Following"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/password2"
+            app:layout_constraintStart_toStartOf="@id/password2"
+            android:text="Followers"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/password4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/password3"
+            app:layout_constraintStart_toStartOf="@id/password3"
+            android:text="Likee"
+            android:textSize="15dp"/>
+
+        <View
+            android:id="@+id/password5"
+            android:layout_width="1000dp"
+            android:layout_height="10dp"
+            android:background="#A3A3A3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/followir"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follower"
+            app:layout_constraintTop_toBottomOf="@id/password5"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/photostext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/recycleView"
+            android:text="Photos"
+            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photosww"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/photostext"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+        <TextView
+            android:id="@+id/soo_all_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soo All"
+            app:layout_constraintTop_toTopOf="@id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
